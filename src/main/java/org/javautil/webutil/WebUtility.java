@@ -10,6 +10,7 @@ import java.net.http.HttpResponse;
 public class WebUtility {
     private static HttpClient client = HttpClient.newHttpClient();
     private static final String USER_AGENT_VALUE = "Mozilla/5.0 Firefox/26.0";
+
     public static String readWebPage(String uri) throws IOException, InterruptedException {
         HttpRequest request = HttpRequest.newBuilder()
                 .uri(URI.create(uri))
